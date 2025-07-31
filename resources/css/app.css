@@ -1,0 +1,136 @@
+html,body {
+    height:100%;
+    background:#F1F1F1;
+    color:#333;
+}
+
+.logo {
+    display:block;
+    width:190px;
+    margin:65px 24% 50px 20%;
+}
+
+.page-wrapper {
+    max-width:1200px;             
+    margin: 1.5% 50% 50% 20%;
+    display:flex;
+    gap:20px;                    
+    align-items:flex-start;
+}
+
+#todo-form {                     
+    min-width:450px;
+}
+
+#todo-form .form-control {
+    height:36px;
+    border:1px solid #d9d9d9;
+    border-radius:3px;
+    background:#fff;
+    font-size:14px;
+}
+
+#todo-form .form-control::placeholder {
+    color: #b0acac;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#todo-form .btn-primary {
+    width:100%;
+    margin-top:10px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:200;
+    transition:opacity .15s;
+    background-color: #387AB7;
+}
+#todo-form .btn-primary:active {
+    opacity:.85;
+}
+
+.table-card {                     
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:3px;
+    box-shadow:0 1px 3px rgba(0,0,0,.08);
+    overflow:hidden;
+    min-width:600px;       
+    padding: 15px;
+}
+
+
+.table-card thead th {
+    background:#fff;
+    border-bottom:1px solid #b8b7b7;
+    font-size:14px;
+    color: #4d4f50;
+    font-weight: 200;
+}
+
+.table-card tbody td {
+    vertical-align:middle;
+    font-size:14px;
+    border-top:1px solid #e5e5e5;
+    color:#777;
+    font-weight:100;
+}
+
+.table-card tbody tr {
+    margin-top:20px;
+}
+
+.table-card tbody td.done {
+    text-decoration:line-through;
+    color:#777;
+}
+
+.table-card tbody td:first-child {
+    font-weight:600;
+}
+
+.btn {
+    color:#fff;
+}
+
+.btn-icon {
+    align-items:center;
+    justify-content:center;
+    width:32px;
+    height:32px;
+    padding:0;
+    line-height:26px;
+    text-align:center;
+    border-radius:3px;
+    font-size:14px;
+    color:#fff;
+}
+
+.btn-success.btn-icon { 
+    background:#28a745;
+    color:#fff;
+}
+
+.btn-danger.btn-icon {
+    background:#dc3545;
+    color:#fff;
+}
+
+.page-footer{
+    margin:80px 0 30px;
+    text-align:center;
+    font-size:13px;
+    color:#777;
+}
+
+.table-card .table { 
+    border-collapse:collapse; 
+}
+
+.table-card .table>:not(caption)>*>* {
+    line-height:1.3;
+}
+
+.btn-icon svg.cross-fix {
+    transform: translateY(-1px); 
+}
